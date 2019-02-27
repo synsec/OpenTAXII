@@ -44,5 +44,5 @@ fpm $common_args \
     --version="${VERSION}" \
     --iteration="${ITERATION}" \
     --package="${out_dir}/${pkg_name}_${VERSION}-${ITERATION}.rpm" \
-    -d '(python35u | python36u | python37u)' \
+    -d 'python(abi) >= 3.5' \
     $files_args
