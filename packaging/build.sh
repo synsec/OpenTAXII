@@ -36,7 +36,7 @@ fpm $common_args \
     --output-type=deb \
     --version="${VERSION}-${ITERATION}" \
     --package="${out_dir}/${pkg_name}_${VERSION}-${ITERATION}.deb" \
-    -d 'python3 (>> 3.4)' \
+    -d 'python3.7 | python3.6 | python3 (>= 3.5)' \
     $files_args
 
 fpm $common_args \
