@@ -81,8 +81,8 @@ auth_api:
     secret: ${OPENTAXII_AUTH_SECRET}
 
 logging:
-  opentaxii: info
-  root: info
+  opentaxii: ${OPENTAXII_LOG_LEVEL}
+  root: ${OPENTAXII_ROOT_LOG_LEVEL}
 
 hooks:
 EOCONFIG
